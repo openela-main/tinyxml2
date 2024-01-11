@@ -1,0 +1,11 @@
+diff -up tinyxml2-03238517b3718f0c977bb061747faa8ebfc4fb44/CMakeLists.txt.orig tinyxml2-03238517b3718f0c977bb061747faa8ebfc4fb44/CMakeLists.txt
+--- tinyxml2-03238517b3718f0c977bb061747faa8ebfc4fb44/CMakeLists.txt.orig	2013-08-05 23:04:27.000000000 +0300
++++ tinyxml2-03238517b3718f0c977bb061747faa8ebfc4fb44/CMakeLists.txt	2013-10-14 11:17:45.403298279 +0300
+@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.6 FATAL
+ cmake_policy(VERSION 2.6)
+ 
+ project(tinyxml2)
++set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_MODULE_PATH})
+ include(GNUInstallDirs)
+ #enable_testing()
+ 
